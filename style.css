@@ -1,0 +1,207 @@
+.x7-maintenance-page * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+.x7-maintenance-background {
+    background-image: url(./assets/x7_desktop.jpg);
+    background-size: cover; /* Cover the entire area of the element */
+    background-position: center; /* Center the image in the element */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    width: 100%; /* Stretch to the full width of the viewport */
+    min-height: 100vh; /* Minimum height to cover the viewport height */
+    position: fixed; /* Optional: Fix the position relative to the viewport */
+    top: 0;
+    left: 0;
+    z-index: -1; /* Optional: Ensure it stays in the background */
+}
+
+.x7-maintenance-main{
+    display: flex; /* Make this a flex container */
+    align-items: center;
+    justify-content: center; /* Align content to the left */
+    flex-direction: row;
+}
+
+.x7-maintenance-left{
+    display: flex; /* Make this a flex container */
+    align-items: center;
+    justify-content: center; /* Align content to the left */
+    flex-direction: column;
+    width: 50%;
+}
+
+.x7-maintenance-right{
+    display: flex; /* Make this a flex container */
+    align-items: center;
+    justify-content: center; /* Align content to the left */
+    flex-direction: column;
+    width: 50%;
+}
+
+.x7-maintenance-main .x7-logo {
+    display: flex; /* Make this a flex container */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    padding-top: 15vh;
+}
+
+.x7-maintenance-main .x7-logo img {
+    height: 40%;
+    width: 40%;
+    object-fit: contain; /* This will ensure the image fits within the div without stretching */
+}
+
+.x7-maintenance-main .x7-content {
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.25rem;
+    color: #ffffff;
+    padding-top: 100px;
+}
+
+.x7-maintenance-main .x7-subcontent {
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    color: #ffffff;
+    padding-top: 41px;
+}
+
+.x7-maintenance-main .cta-button{
+    padding-top: 75px;
+}
+
+.x7-maintenance-main .cta-button button {
+    font-family: 'Ubuntu', sans-serif;
+    color: #ffffff;
+    background: linear-gradient(90deg, rgba(255,50,250,1) 0%, rgba(60,40,255,1) 100%);
+    letter-spacing: 1px;
+    border: none; /* This will remove any borders */
+    padding: 15px 45px; /* Adjust padding as needed */
+    font-size: 1.4rem; /* Adjust font size as needed */
+    cursor: pointer; /* Change cursor to indicate it's clickable */
+}
+
+@media (max-width: 1440px) {
+    .x7-maintenance-main .x7-logo img {
+        height: 50%;
+        width: 50%;
+        object-fit: contain; /* This will ensure the image fits within the div without stretching */
+    }
+    .x7-maintenance-main .x7-content {     
+        font-size: 1rem;      
+        padding-top: 52px;
+    }
+    
+    .x7-maintenance-main .x7-subcontent {
+        font-size: .9rem;  
+        padding-top: 38px;
+    }
+
+}
+
+@media (max-width: 991px) {
+    .x7-maintenance-main .x7-logo img {
+        height: 70%;
+        width: 70%;
+        object-fit: contain; /* This will ensure the image fits within the div without stretching */
+    }
+    .x7-maintenance-main .cta-button button {
+        font-size: 1rem; /* Adjust font size as needed */
+        padding: 15px 35px; /* Adjust padding as needed */
+    }
+}
+
+@media (max-width: 768px) {
+    .x7-maintenance-main .x7-logo img {
+        height: 80%;
+        width: 80%;
+        object-fit: contain; /* This will ensure the image fits within the div without stretching */
+    }
+    .x7-maintenance-main .x7-content {     
+        font-size: .9rem;      
+        padding-top: 52px;
+    }
+    
+    .x7-maintenance-main .x7-subcontent {
+        font-size: .75rem;  
+        padding: 35px 10px 0 10px; 
+    }
+    .x7-maintenance-main .cta-button button {
+        font-size: 1rem; /* Adjust font size as needed */
+        padding: 10px 25px; /* Adjust padding as needed */
+    }
+}
+
+@media (max-width: 576px) {
+    .x7-maintenance-background {
+        background-image: url(./assets/x7_mobile.jpg);
+    }
+    .x7-maintenance-main{
+        flex-direction: column;
+    }
+    .x7-maintenance-main .x7-logo {
+        padding-top: 3vh;
+    }
+    .x7-maintenance-main .x7-logo img {
+        height: 150%;
+        width: 150%;
+        object-fit: contain; /* This will ensure the image fits within the div without stretching */
+    }
+    .x7-maintenance-main .x7-content {     
+        font-size: 1rem; 
+        padding-top: 30px;
+        width: 200%;
+    }
+    .x7-maintenance-main .x7-subcontent {
+        font-size: .75rem;  
+        padding: 25px 10px 0 10px;
+        width: 200%; 
+    }
+    .x7-maintenance-main .cta-button{
+        padding-top: 30px;
+    }
+
+}
+
+@media (max-width: 430px) {
+    .x7-maintenance-main .x7-content {     
+        font-size: .75rem; 
+        padding-top: 30px;
+        width: 200%;
+    }
+    .x7-maintenance-main .x7-subcontent {
+        font-size: .6rem;  
+        padding: 25px 10px 0 10px;
+        width: 200%; 
+    }
+    .x7-maintenance-main .cta-button{
+        padding-top: 30px;
+    }
+    .x7-maintenance-main .cta-button button {
+        font-size: .8rem; /* Adjust font size as needed */
+        padding: 10px 30px; /* Adjust padding as needed */
+    }
+}
+
+@media (max-width: 375px) {
+    .x7-maintenance-main .x7-content {     
+        font-size: .65rem; 
+        padding-top: 30px;
+        width: 200%;
+    }
+    .x7-maintenance-main .x7-subcontent {
+        font-size: .55rem;  
+        padding: 25px 10px 0 10px;
+        width: 200%; 
+    }
+    .x7-maintenance-main .cta-button{
+        padding-top: 25px;
+    }
+    .x7-maintenance-main .cta-button button {
+        font-size: .8rem; /* Adjust font size as needed */
+        padding: 10px 30px; /* Adjust padding as needed */
+    }
+}
