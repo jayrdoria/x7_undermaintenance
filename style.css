@@ -4,7 +4,11 @@
     box-sizing: border-box;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('./assets/Ubuntu-Regular.ttf') format('opentype');
+}
+
 .x7-maintenance-background {
     background-image: url(./assets/x7_desktop.jpg);
     background-size: cover; /* Cover the entire area of the element */
@@ -67,16 +71,17 @@
     font-family: 'Ubuntu', sans-serif;
     color: #ffffff;
     padding-top: 41px;
+    line-height: 20px; /* Spacing of subcontent to each other */
 }
 
 .x7-maintenance-main .cta-button{
-    padding-top: 75px;
+    padding-top: 60px; /* Change to 60 from 75 */
 }
 
 .x7-maintenance-main .cta-button button {
     font-family: 'Ubuntu', sans-serif;
     color: #ffffff;
-    background: linear-gradient(90deg, rgba(255,50,250,1) 0%, rgba(60,40,255,1) 100%);
+    background: linear-gradient(90deg, rgba(247,48,104,1) 0%, rgba(60,40,255,1) 100%);
     letter-spacing: 1px;
     border: none; /* This will remove any borders */
     padding: 15px 45px; /* Adjust padding as needed */
@@ -176,6 +181,7 @@
         font-size: .6rem;  
         padding: 25px 10px 0 10px;
         width: 200%; 
+        line-height: 10px; /* Spacing of subcontent to each other */
     }
     .x7-maintenance-main .cta-button{
         padding-top: 30px;
